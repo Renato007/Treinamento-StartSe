@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>tabela 2</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 5px 3px; /* borda para cada elemento */
+            border: 1px solid gray;
+            empty-cells: hide; /* remove a borda da celulas vazias só funciona com border-collapse: separate */
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        thead{
+            background-color: lightgray;
+            color: black;
+        }
+
+        tr, td, th{
+            border: 1px solid gray;
+        }
+        th{
+            text-align: left;
+        }
+        caption{
+            caption-side: bottom;
+            color:  black;
+            font-size: 9pt;
+        }
+        #endereco{
+            text-align: center;
+        }
+        tfoot{
+            background-color: lightgray;
+            color: black;
+        }
+        tbody tr:nth-child(even){
+            background-color: lightskyblue;
+        }
+        tbody tr:nth-child(odd){
+            background-color: lightcyan;
+        }
+        tbody tr:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela 1. Relação de clientes</caption>
+        <thead>
+            <tr>
+                <td rowspan="2">Nome</td>
+                <td rowspan="2">Telefone</td>
+                <td id="endereco" colspan="5">Endereço</td>
+                </tr>
+                <td>Rua</td>
+                <td>Número</td>
+                <td>Cidade</td>
+                <td>Estado</td>
+                <td>CEP</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jose Smith</td>
+                <td>+5521965074954</td>
+                <td>Av. Beltrano</td>
+                <td>123</td>
+                <td>Nova Yourk</td>
+                <td>NY</td>
+                <td>103435</td>
+            </tr>
+            <tr>
+                <td>Jose Smith</td>
+                <td>+5521965074954</td>
+                <td>Av. Beatrano</td>
+                <td>123</td>
+                <td>Nova Yourk</td>
+                <td>NY</td>
+                <td>103435</td>
+            </tr>
+            <tr>
+                <td>Jose Smith</td>
+                <td>+5521965074954</td>
+                <td>Av. Beatrano</td>
+                <td>123</td>
+                <td>Nova Yourk</td>
+                <td>NY</td>
+                <td>103435</td>
+            </tr>
+            <tr>
+                <td>Jose Smith</td>
+                <td>+5521965074954</td>
+                <td>Av. Beatrano</td>
+                <td>123</td>
+                <td>Nova Yourk</td>
+                <td>NY</td>
+                <td>103435</td>
+            </tr>
+            <tr>
+                <td>Jose Smith</td>
+                <td>+5521965074954</td>
+                <td>Av. Beatrano</td>
+                <td>123</td>
+                <td>Nova Yourk</td>
+                <td>NY</td>
+                <td>103435</td>
+            </tr>
+            <tr>
+                <td>Jose Smith</td>
+                <td>+5521965074954</td>
+                <td>Av. Beatrano</td>
+                <td>123</td>
+                <td>Nova Yourk</td>
+                <td>NY</td>
+                <td>103435</td>
+            </tr>
+            <tr>
+                <td>Jose Smith</td>
+                <td>+5521965074954</td>
+                <td>Av. Beatrano</td>
+                <td>123</td>
+                <td>Nova Yourk</td>
+                <td>NY</td>
+                <td>103435</td>
+            </tr>
+            <tr>
+                <td>Jose Smith</td>
+                <td>+5521965074954</td>
+                <td>Av. Beatrano</td>
+                <td>123</td>
+                <td>Nova Yourk</td>
+                <td>NY</td>
+                <td>103435</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="7">Para melhores informações entre encontato</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
