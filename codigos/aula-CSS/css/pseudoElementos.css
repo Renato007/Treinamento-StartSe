@@ -1,0 +1,26 @@
+p{
+    background-color: #CCF;
+}
+p.destaque::first-letter{
+    font-size: 30px;
+}
+.destaque::first-letter{
+    font-size: 30px;
+    color: aqua;
+}
+div::first-line{
+    color: blue;
+}
+
+li{
+    color: green;
+}
+
+ul li::marker{
+    color: red;
+}
+
+::selection{
+    background:yellow;
+    color: red;
+}
