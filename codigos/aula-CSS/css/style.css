@@ -1,0 +1,18 @@
+/* Aplica tanto para a tag a como também a classe menuitem */
+a, .menuitem {
+  text-decoration: underline;
+  color: green;
+  cursor: pointer;
+}
+/*Aplica para todos elementos a que tem a class link  */
+a.link {
+    background-color: #AAAAAA;
+}
+
+.link{
+font-size: 25px;
+}
+
+#menubar > .menulist{
+list-style: square;
+}
