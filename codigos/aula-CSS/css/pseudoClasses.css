@@ -1,0 +1,17 @@
+li a{
+font-size: 20px ;
+text-decoration: none;
+}
+a:hover{
+    background-color: yellow;
+}
+a:visited, h1:hover{
+    color: purple;
+}
+input:focus, textarea:focus{
+    background-color: yellow;
+}
+#meusLinks li:first-child a{
+    background-color: coral;
+    color: white;
+}
