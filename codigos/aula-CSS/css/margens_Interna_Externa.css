@@ -1,0 +1,13 @@
+div{
+    width: 466px;
+    height: 150px;
+    background-color: pink;
+    border: 1px solid red;
+}
+
+#bloco1{
+    margin: auto;
+}
+.fundo{
+    background-color: yellow;
+}
