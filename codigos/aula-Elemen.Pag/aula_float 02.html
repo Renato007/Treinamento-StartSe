@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aula06 -Float</title>
+    <style>
+      #cabecalho{
+        min-height: 100px;
+        background:yellow;
+        margin-bottom: 10px;
+      }
+
+      #page {
+        background-color: pink;
+        height: 300px;
+      }
+
+      #page div {
+        box-sizing: border-box;
+        float:left;
+        border: 1px solid red;
+        height: 100%;
+        padding: 10px;
+        width: 25%; /* voltar : sem o width */
+      }
+
+/*       .col3 {
+        width: 30%;
+      }
+      .col4 {
+        width: 40%;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1 id="cabecalho">Titulo do Site</h1>
+    <div id="page">
+      <div class="col3">Bloco 01</div>
+      <div class="col4">Bloco 02</div>
+      <div class="col3">Bloco 03</div>
+      <div class="col3">Bloco 04</div>
+    </div>
+  </body>
+</html>
+<!-- 
+  observação:
+ As divs elas estão dentro de um conteiner com flutuação para a esquerda. Se alterar para a Direita a ordem muda para 3, 2 e 1.
+ O espaço entre elas não vai afetar mais o tamanho dos elementos pois estão flutuando um sobre o outro.
+ Poderia colocar quantas colunas eu quizer. precisariamos apenas calcular a igualdade destas colunas sem colocar a margem se não impurraria para baixo.
+
+ -->
