@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aula13-lista</title>
+    <style>
+      ol.romano {
+        list-style-type: lower-roman;
+        border: 1px solid red;
+        list-style-position: outside;
+        padding-left: 0;
+        margin-left: 40px;
+      }
+
+      .romano li {
+        background-color: aqua;
+        margin-bottom: 5px;
+      }
+
+      ul.quad {
+        list-style-type: square;
+      }
+
+      ul.img {
+        list-style-image: url(https://assets.codepen.io/t-1/user-default-avatar.jpg?fit=crop&format=auto&height=10&version=0&width=10);
+      }
+
+      ul.menu {
+        list-style-type: none;
+        padding: 0;
+        border: 1px solid red;
+        height: 30px;
+      }
+
+      ul.menu li {
+        display: block;
+        float: left;
+        padding: 5px 10px;
+      }
+      ul.menu li a {
+        text-decoration: none;
+      }
+      ul.menu li:hover {
+        background-color: cyan;
+      }
+      ul.menu li:hover a {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <ol class="romano">
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem itaque
+        voluptatem labore eveniet vero eligendi officia reprehenderit placeat
+        totam, quae praesentium eius maiores autem esse aspernatur minima modi
+        incidunt quos.
+      </li>
+      <li>Segundo item</li>
+      <li>Terceiro item</li>
+    </ol>
+
+    <ul class="quad">
+      <li>Primeiro item</li>
+      <li>Segundo item</li>
+      <li>Terceiro item</li>
+    </ul>
+
+    <ul class="img">
+      <li>Primeiro item</li>
+      <li>Segundo item</li>
+      <li>Terceiro item</li>
+    </ul>
+
+    <ul class="menu">
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+    </ul>
+  </body>
+</html>
+<!-- 
+  observação:
+ outra opção para colocar a  borda vermelha:
+ ul.menu {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid red;
+  
+  }
+ul.menu li {
+  display: inline-block;
+  padding: 5px 10px;
+}
+  
+ -->
