@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aula09 -Pilha dos Elementos z-index</title>
+    <style>
+      body {
+        padding-top: 50px;
+      }
+
+      .container {
+        position: relative;
+      }
+
+      #menu-superior {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 30px;
+        background-color: aqua;
+        padding: 10px;
+        width: 100%;
+        z-index: 10;
+      }
+      .black-box {
+        position: relative;
+        z-index: 4;
+        border: 2px solid black;
+        height: 100px;
+        margin: 30px;
+        background-color: azure;
+      }
+
+      .gray-box {
+        position: absolute;
+        z-index: 3; /* gray box will be above both green and black box */
+        background: lightgray;
+        height: 60px;
+        width: 70%;
+        left: 50px;
+        top: 50px;
+      }
+
+      .green-box {
+        position: absolute;
+        z-index: 2; /* green box will be above black box */
+        background: lightgreen;
+        width: 35%;
+        left: 270px;
+        top: -15px;
+        height: 100px;
+      }
+
+      #caixa {
+        position: relative;
+        width: 50%;
+        height: 100px;
+        overflow:scroll;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="menu-superior">Menu superior</div>    
+    <div class="container">
+      <div class="black-box">Caixa preta</div>
+      <div class="gray-box">Caixa cinza</div>
+      <div class="green-box">Caixa verde</div>
+    </div>
+
+    <div id="caixa">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu dui
+      eget justo convallis eleifend lacinia et nisl. Suspendisse dapibus, elit
+      sit amet condimentum ultrices, tellus est mollis nisi, in laoreet nisl
+      justo non elit. Nunc a lacinia mi. Praesent imperdiet lectus id vehicula
+      finibus. Vestibulum a velit dui. In quis volutpat magna. Class aptent
+      taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+      himenaeos. Fusce maximus nec lorem nec luctus. Vivamus sollicitudin quis
+      neque et luctus. Duis quis lectus turpis.
+    </div>
+    <div style="height: 1000px;"></div>
+  </body>
+</html>
+<!-- 
+  observação:
+ colocamos o efeito z-index para colocar o menu sobre todos os itens.
+
+ quando o conteudo é maior que a capacidade da caixa
+ utilizamos um overflow:
+
+ -->
