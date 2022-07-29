@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aula16-Gradientes e sombras</title>
+    <style>
+    div {
+  min-height: 150px;
+  margin: 50px;
+}
+
+.box1 {
+  background-image: linear-gradient(to bottom right, green, yellow, blue);
+  box-shadow: 5px 10px 15px gray;
+}
+.box2 {
+  background-image: radial-gradient(ellipse closest-corner at center, green, yellow, blue);
+  box-shadow: -15px -10px 15px green;
+}
+.box3 {
+  background-image: conic-gradient(green, yellow, blue);
+  box-shadow: 0px 0px 25px 20px pink;
+}
+
+h1 {
+  color: yellow;
+  text-shadow: 1px 1px 2px green;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Sombras e Gradientes</h1>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </body>
+</html>
+<!-- 
+  observação:
+ 
+
+ -->
