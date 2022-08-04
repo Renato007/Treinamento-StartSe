@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <style>
+      form > div , fieldset{
+        margin-bottom: 10px;
+        padding: 5px 0;
+      }
+
+      form{
+        width: 700px;
+      }
+
+      fieldset{
+        padding-left: 0;
+        background: #EEE;
+        border: 1px solid #AAA;
+      }
+
+      legend{
+        color: #0000cc;
+        font-weight: bold;
+        font-variant: small-caps;
+      }
+
+      textarea {
+        vertical-align: text-top;
+        width: 500px;
+        height: 150px;
+    }
+    
+    input[type=text], input[type=mail], select{
+          width: 500px;
+
+      }
+
+      label {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+        font-weight: bold;
+      }
+
+      label.obrigatorio{
+        color: #AA0000;
+      }
+
+      div.cadastro {
+        padding-left: 150px;
+      }
+
+      .cadastro label {
+        width: 300px;
+        text-align: left;
+      }
+
+      h1{
+        text-shadow: 2px 2px 5px cyan;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Contatos</h1>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <div>
+          <label for="nome" class="obrigatorio">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Nome completo"
+            required
+          />
+        </div>
+        <div>
+          <label for="email" class="obrigatorio">Email:</label>
+          <input
+            type="mail"
+            name="email"
+            id="email"
+            placeholder="exemplo@gmail.com"
+            required
+          />
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="assunto">Assunto</label>
+        <select name="assunto" id="assunto">
+          <option value="" selected></option>
+          <option value="reclamacao">Reclamação</option>
+          <option value="sugestao">Sugestão</option>
+          <option value="elogio">Elogio</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+      <!--         <fieldset>
+            <legend>Aasunto</legend>
+            <input type="radio" name="assunto" value ="reclamacao" id="reclamacao">
+            <label for="reclamacao">Reclamação</label>
+            <input type="radio" name="assunto" value ="sugestao" id="sugestao">
+            <label for="sugestao">Sugestão</label>
+            <input type="radio" name="assunto" value="elogio" id="elogio">
+            <label for="elogio">Elogio</label>
+            <input type="radio" name="assunto" value="outro" id="outro">
+            <label for="outro">Outro</label>
+        </fieldset> -->
+
+      <div>
+        <label for="mensagem" class="obrigatorio">Mensagem:</label>
+        <textarea
+          name="mensagem"
+          id="mensagem"
+          required
+          placeholder="Digite sua mensagem"
+        ></textarea>
+      </div>
+      <div class="cadastro">
+        <input type="checkbox" name="cadastro" id="cadastro" />
+        <label for="cadastro">Desejo receber E-mail informativos</label>
+      </div>
+      <div>
+        <input type="submit" value="Enviar mensagem" />
+      </div>
+    </form>
+  </body>
+</html>
