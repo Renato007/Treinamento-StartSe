@@ -1,7 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  width: 150px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  flex-wrap: wrap;
+}
 li {
-  list-style-type: circle;
+  width: 100px;
+  list-style-type: none;
   list-style-position: outside;
-  background: #cce5ff;
-  color: darkblue;
   margin: 5px;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+li:hover{
+    background: rgba(100, 100, 100, 0.5);
 }
