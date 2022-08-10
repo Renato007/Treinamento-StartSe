@@ -1,0 +1,7 @@
+li {
+  list-style-type: circle;
+  list-style-position: outside;
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+}
