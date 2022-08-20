@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula de Javascript</title>
-</head>
-<body>
-    <h1 id="titulo">Introdução à Linguagem Javascript</h1>
-    <h2 id="sub_titulo">bora</h2>
-    <select name="" id="coresFundo" onchange="mudaCorFundo()">
-        <option value="white">Branco</option>
-        <option value="blue">Azul</option>
-        <option value="yellow">Amarelo</option>
-        <option value="red">Vermelho</option>
-    </select>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultima aula sobre DOM</title>
+    <style>
+      body {
+        background: rgb(7, 7, 71);
+        color: rgb(239, 227, 227);
+        font: 11pt Tahoma;
+      }
 
-    <button onclick="print()">Imprimir</button>
-    <script src="./js_Array.js"></script>
-</body>
+      ul.novoponteiro {
+        cursor: pointer;
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Document Object Model</h2>
+    <p>Define:</p>
+    <ul id="lista">
+      <li>Os Elementos HTML como objetos</li>
+      <li>As propriedades dos elementos HTML</li>
+      <li>Os métodos para acessar os elementos HTML</li>
+      <li>Os eventos dos elementos HTML</li>
+    </ul>
+    <button>Limpar</button>
+    <script src="./js_DOM.js"></script>
+  </body>
 </html>
