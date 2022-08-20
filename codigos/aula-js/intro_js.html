@@ -9,11 +9,14 @@
 <body>
     <h1 id="titulo">Introdução à Linguagem Javascript</h1>
     <h2 id="sub_titulo">bora</h2>
-    <form id="formularioLogin" onsubmit="bemVindo();return false">
-        <input type="text" id="idNomeUsuario" placeholder="usuário">
-        <input type="password" placeholder="senha">
-        <button type="submit">Entrar</button>
-    </form>
+    <select name="" id="coresFundo" onchange="mudaCorFundo()">
+        <option value="white">Branco</option>
+        <option value="blue">Azul</option>
+        <option value="yellow">Amarelo</option>
+        <option value="red">Vermelho</option>
+    </select>
+
+    <button onclick="print()">Imprimir</button>
     <script src="./js_externo.js"></script>
 </body>
 </html>
