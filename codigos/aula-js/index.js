@@ -24,7 +24,8 @@ function adiconaTarefa(textoDaTarefa){
     elementoLI.appendChild(AdiconarBotaoRemover())
 
 
-    //LISTER - sempre que um item da lista for clicado pelo mouse
+    //LISTER - SEMPRE QUE UM ITEM DA LISTA FOR CLICADO PELO MOUSE
+    //ALTERA O MARCADOR, A COR DA FONTE E RISCA O TEXTO
     elementoSPAN.addEventListener("click", function(){
         if(this.className === 'tarefa'){
             if(this.parentNode.className ==='naoRealizada'){
@@ -63,5 +64,14 @@ function exibeOcultaListaSuspensa(){
     }else{
         listaSuspensa.removeAttribute('hidden');
     }
-
 }
+
+listaSuspensa.addEventListener('change', function(){
+    if(listaSuspensa.selectedIndex === 1 | listaSuspensa.selectedIndex === 2){
+        const vetorTarefas = listaTarefas.querySelectorAll('.tarefa');
+        for(tarefa of vetorTarefas){
+            tarefa.dispatchEvent(new Event('click'));
+        }
+    }
+
+})
