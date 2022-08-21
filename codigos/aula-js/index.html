@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de Tarefas</title>
     <style>
-        body{
-            background: rgb(2, 2, 32);
-            color: white;
-            font: 14pt Tahoma;
-        }
-        button.remover{
-            position: absolute;
-            right: 100px;
-        }
+      body {
+        background: rgb(2, 2, 32);
+        color: white;
+        font: 14pt Tahoma;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+      }
+
+      #caixaDeTexto {
+        width: 80vw;
+        height: 30px;
+      }
+      button.remover {
+        position: absolute;
+        right: 100px;
+      }
+      ul li.naoRealizada {
+        list-style-type: "☐";
+        cursor: pointer;
+        text-indent: 10px;
+      }
+      ul li.realizada {
+        list-style-type: "☑";
+        cursor: pointer;
+        text-indent: 10px;
+        text-decoration: line-through;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Lista de Tarefas</h2>
     <div>
-        <input type="text" id="caixaDeTexto" placeholder="Tarefa">
-        <button id="btAdicionar">&#10010;</button>
-    </div>
-    <ul id="listaTarefas">
+      <input type="text" id="caixaDeTexto" placeholder="Tarefa" />
+      <button id="btAdicionar">&#10010;</button>
 
-    </ul>
+      <SElect id="listaSuspensa" hidden>
+        <option value="">Selecione uma opção--</option>
+        <option value="">Marcar Todas as Tarefas</option>
+        <option value="">Desmarcar Todas as Tarefas</option>
+        <option value="">Limpar a Lista de Tarefa</option>
+      </SElect>
+    </div>
+    <ul id="listaTarefas"></ul>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
