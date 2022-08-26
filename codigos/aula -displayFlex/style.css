@@ -1,0 +1,14 @@
+.flex-conteiner{
+    display: flex;
+    background-color: gold;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.flex-conteiner > div {
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+}
