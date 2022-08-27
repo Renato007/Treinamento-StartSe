@@ -20,5 +20,5 @@ Declaração de uma Classe
 Método construtor de Classe
 objervações:
 Na hora de istanciar um objeto o número de argumentos é igual ao numero de parametro do construtor. Se exceder será ignorado. 
-Quando usamos o this. com um nome de um atributo novo. Estamos criando uma nova atribuição que atenderá ao objeto instanciado.
+Quando usamos o this. com um nome de um atributo novo. Estamos criando uma nova atribuição que atenderá ao objeto instanciado 
 */
