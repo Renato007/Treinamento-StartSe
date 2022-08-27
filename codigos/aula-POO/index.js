@@ -1,24 +1,20 @@
 'use strict'
-class Filme {
-    constructor (titulo, ano){
-        this.titulo = titulo;
-        this.ano = ano;
-    }
-}
+import { Musica } from "./musica.js"
+import { Produto } from "./produto.js";
+const musica1 = new Musica('Minha música', 100);
 
-let meuFilme = new Filme('Aprendendo Javascript', 2022)
+console.log(musica1.formato);
+console.log(Musica.formato);
 
-console.log(typeof meuFilme);
-console.log(meuFilme)
-console.log(meuFilme.ano)
-console.log(meuFilme.titulo);
+const produto01 = new Produto(20, 'Meu produto', 35, Produto.GRANDE)
+console.log(produto01);
 
-meuFilme.classificacao = 5;
-console.log(meuFilme)
+//Atributo Estático de uma Classe em JavaScrip
 /* 
-Declaração de uma Classe
-Método construtor de Classe
-objervações:
-Na hora de istanciar um objeto o número de argumentos é igual ao numero de parametro do construtor. Se exceder será ignorado. 
-Quando usamos o this. com um nome de um atributo novo. Estamos criando uma nova atribuição que atenderá ao objeto instanciado 
+declaração static antes do nome do atributo.
+
+static pode servir como um cost dentro do objeto e pode ser acessada ex:Produto.GRANDE.
+
+pode ser utilizada o atributo statico em outras instancias até mesmo istancias de outras classes.
+
 */
