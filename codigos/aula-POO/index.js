@@ -1,24 +1,24 @@
-//exemplo 01
-
-/* 'use strict'
-let nome='Ana';
-nume="Pedro"
-
-console.log(nome)
-console.log(nume) */
-
-//exemplo 02
-/* let nome='Ana';
-nome="Pedro"
-
-function  exibirNome (){
-    'use strict'
-    a = 30;
-    console.log(a);
-    console.log(nome);
+'use strict'
+class Filme {
+    constructor (titulo, ano){
+        this.titulo = titulo;
+        this.ano = ano;
+    }
 }
-exibirNome(nome); */
 
-/* Utilização do modo Estrito
-Banstante útil para identificar erros de nomes de variáveis não declaradas 
+let meuFilme = new Filme('Aprendendo Javascript', 2022)
+
+console.log(typeof meuFilme);
+console.log(meuFilme)
+console.log(meuFilme.ano)
+console.log(meuFilme.titulo);
+
+meuFilme.classificacao = 5;
+console.log(meuFilme)
+/* 
+Declaração de uma Classe
+Método construtor de Classe
+objervações:
+Na hora de istanciar um objeto o número de argumentos é igual ao numero de parametro do construtor. Se exceder será ignorado. 
+Quando usamos o this. com um nome de um atributo novo. Estamos criando uma nova atribuição que atenderá ao objeto instanciado.
 */
