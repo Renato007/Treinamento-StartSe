@@ -1,16 +1,23 @@
 "use strict";
 export class Produto {
-  static GRANDE = 10;
-  static MEDIO = 5;
-  static PEQUENO = 1;
-  codigo;
-  titulo;
+  descricao;
+  largura;
+  altura;
+  profundidade;
   valor;
-  tamanho;
-  constructor(cod, nome, valor, tamanho) {
-    this.codigo = cod;
-    this.nome = nome;
+  
+  constructor(cod, largura, altura, profundidade, valor) {
+    this.descricao = cod;
+    this.largura = largura;
+    this.altura = altura;
+    this.profundidade = profundidade;
     this.valor = valor;
-    this.tamanho = tamanho;
+  }
+  volumeProduto(){
+    return this.largura * this.altura * this. profundidade;
+  }
+  parcelaValor(parcelas){
+    return this.valor / parcelas
   }
 }
+

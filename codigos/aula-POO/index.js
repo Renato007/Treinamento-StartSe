@@ -9,12 +9,13 @@ console.log(Musica.formato);
 const produto01 = new Produto(20, 'Meu produto', 35, Produto.GRANDE)
 console.log(produto01);
 
-//Atributo Estático de uma Classe em JavaScrip
+const prod =new Produto('Refrigerante', 10, 3, 2, 20);
+
+console.log(prod.volumeProduto())
+console.log(prod.parcelaValor(2))
+
+//Declarando Métodos de uma Classe
 /* 
-declaração static antes do nome do atributo.
 
-static pode servir como um cost dentro do objeto e pode ser acessada ex:Produto.GRANDE.
-
-pode ser utilizada o atributo statico em outras instancias até mesmo istancias de outras classes.
 
 */
