@@ -7,4 +7,17 @@ export class Musica{
         this.titulo = titulo;
         this.duracao = duracao;
     }
+    static converteSegundosEmMinutos(duracao){
+        const min = Math.floor(duracao / 60);
+        let seg = duracao % 60;
+        if (seg < 10 && seg > 0){
+            seg = `0${duracao % 60}`;
+        }else if (seg < 10){
+            seg =`00`;
+        }
+        return `${min}:${seg}`;
+    }
+    getDuracao(){
+        return this.duracao;
+    }
 }
