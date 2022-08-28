@@ -1,13 +1,18 @@
 'use strict'
-import { Musica } from "./musica.js"
 import { Produto } from "./produto.js";
-import { Laboratorio } from "./laboratorio.js";
+import { Livro } from "./livro.js";
+import { Loja } from "./loja.js";
 
-const lab = new Laboratorio("Informática", 10)
-console.log(lab);
-console.log(lab.getCapacidade());
-lab.setCapacidade(20);
-console.log(lab.getCapacidade());
+
+const prod = new Produto('Generico');
+const livro01 = new Livro('Livro','Javascript moderno', 50);
+const livro02 = new Livro('Livro','Javascript Avançado', 200);
+
+const minhaLoja = new Loja('MinhaLoja');
+minhaLoja.adicionaProduto(prod);
+minhaLoja.adicionaProduto(livro01);
+minhaLoja.adicionaProduto(livro02);
+minhaLoja.exibeProdutos();
 
 //Declarando Métodos de uma Classe
 /* 

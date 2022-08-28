@@ -1,0 +1,9 @@
+{
+    "name": "js_oo",
+    "version": "1.0.0",
+    "description": "Projeto do bytebank para seus cliente",
+    "main": "index.js",
+    "author": "",
+    "license": "ISC",
+    "type": "module"
+   }
