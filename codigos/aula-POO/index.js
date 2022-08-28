@@ -1,10 +1,13 @@
 'use strict'
 import { Musica } from "./musica.js"
 import { Produto } from "./produto.js";
-const musica1 = new Musica('Minha música', 100);
+import { Laboratorio } from "./laboratorio.js";
 
-/* console.log(musica1.converteSegundosEmMinutos(musica1.getDuracao()));
- */console.log(Musica.converteSegundosEmMinutos(musica1.getDuracao()));
+const lab = new Laboratorio("Informática", 10)
+console.log(lab);
+console.log(lab.getCapacidade());
+lab.setCapacidade(20);
+console.log(lab.getCapacidade());
 
 //Declarando Métodos de uma Classe
 /* 
