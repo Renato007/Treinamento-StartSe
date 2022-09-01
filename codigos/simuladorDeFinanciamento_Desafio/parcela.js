@@ -13,4 +13,8 @@ export class Parcela{
         this.#saldo =saldo;
     }
     //não vai precisar acessar todos os valores com get
+
+    getSaldo(){
+        return this.#saldo;
+    }
 }
