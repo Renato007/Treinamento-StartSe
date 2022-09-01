@@ -1,5 +1,7 @@
 const conCarencia = document.querySelector('#conCarencia');
 const listaSuspensa = document.querySelector('#listaSuspensa');
+const corpoTabela = document.querySelector('#corpoTabela');
+
 
 conCarencia.addEventListener('change', function(){
 if(this.checked){
