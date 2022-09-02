@@ -25,7 +25,7 @@ static calcJuros(valor, taxajuros){
       const valor = juros * amortizacao;
       saldo -= amortizacao;
       if(saldo = 0){saldo = 0;}
-      this.#parcelas.push( new Parcela(numero, valor, juros, amortizacao))
+      this.#parcelas.push( new Parcela(numero, valor, juros, amortizacao, saldo))
     }
   }
 
